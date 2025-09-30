@@ -65,6 +65,7 @@ public class HealthKiosk {
             metricValue = (int)numberOfTablets;
         }
         if (metric == 3) {
+            System.out.print("Enter the angle in degrees:");
             double angle = sc.nextDouble();
             System.out.println("the sin of the angle is " + Math.round(Math.sin(Math.toRadians(angle))*1000) + "And  the cos of the angle is " + Math.round(Math.cos(Math.toRadians(angle))*1000));
             metricValue = (int)Math.round(Math.sin(Math.toRadians(angle))*1000);
@@ -76,7 +77,7 @@ public class HealthKiosk {
      
 
 
-       char idletter = (char)Math.rint(((Math.random() * 30)+ 65));
+       char idletter = (char)Math.rint(((Math.random() * 26)+ 65));
        int idnumber1 = (int)((Math.random()*6)+3);
        int idnumber2 = (int)((Math.random()*6)+3);
        int idnumber3 = (int)((Math.random()*6)+3);
@@ -141,3 +142,4 @@ public class HealthKiosk {
 
     
 }
+
